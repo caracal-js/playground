@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/playground/_/',
-    bare: 'https://incog.dev/bare/',
+    bare: 'https://client.incog.dev/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/playground/uv/uv.handler.js',
