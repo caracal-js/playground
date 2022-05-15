@@ -70,6 +70,8 @@ class UVServiceWorker extends EventEmitter {
                 ultraviolet, 
                 !this.method.empty.includes(request.method.toUpperCase()) ? await request.blob() : null
             );
+            
+            requestCtx.headers.host = ultraviolet.meta.url.host;
 
             if (ultraviolet.meta.url.protocol === 'blob:') {
                 requestCtx.blob = true;
